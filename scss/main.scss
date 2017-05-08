@@ -1,0 +1,54 @@
+$white: #ffffff;
+$black: #000000;
+$gray-darker: #262626;
+$gray-dark: #515151;
+$gray: #969696;
+$gray-light: #D6D6D6;
+$gray-lighter: #F3F3F3;
+$red: #8C2020;
+
+$font-xl: 28px;
+$font-lg: 22px;
+$font-md: 20px;
+$font-sm: 16px;
+$font-xs: 14px;
+
+body {
+  margin: 100px 30px 30px 30px;
+  font-family: 'Josefin Slab', serif;
+  font-size: $font-md;
+  color: $gray-dark;
+  background: $gray-lighter;
+
+  h1 {
+    font-size: $font-xl;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: $font-lg;
+    text-align: center;
+    color: $gray;
+  }
+
+  p {
+    font-size: $font-md;
+    line-height: 150%;
+  }
+
+  a {
+    color: $red;
+    &:hover {
+      color: darken($red, 20);
+    }
+  }
+
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    p.error-msg {
+      text-align: center;
+    }
+  }
+}
